@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>시간표 만들기</title>
+    <style>
+        table
+        {
+            border: 1px solid #ccc;
+            border-collapse: collapse;
+            width:400px;
+        }
+
+        th, td
+        {
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>시간</th>
+            <th>월요일</th>
+            <th>화요일</th>
+            <th>수요일</th>
+        </tr>
+        <tr>
+            <td>09:00</td>
+            <td>HTML</td>
+            <td>CSS</td>
+            <td rowspan="2">JavaScript</td>
+        </tr>
+        <tr>
+            <td>10:00</td>
+            <td colspan="2">팀 프로젝트</td>
+        </tr>
+        <tr>
+            <td>11:00</td>
+            <td colspan="3">점심시간</td>
+        </tr>
+    </table>
+</body>
+</html>

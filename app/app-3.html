@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>쇼핑몰 주문 내역</title>
+    <style>
+        table
+        {
+            border: 1px solid #ccc;
+            width: 600px;
+            border-collapse: collapse;
+        }
+        
+        thead, tfoot
+        {
+            background-color:lemonchiffon;
+        }
+
+        th, td
+        {
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+
+        .count
+        {
+            text-align: center;
+        }
+        
+        .price, .total
+        {
+            text-align: right;
+        }
+
+        tbody:hover
+        {
+            background-color: aquamarine;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+    <thead>
+        <tr>
+            <th>상품명</th>
+            <th class="count">수량</th>
+            <th class="price">가격</th>
+            <th class="total">합계</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>키보드</td>
+            <td class="count">2</td>
+            <td class="price">30,000원</td>
+            <td class="total">60,000원</td>
+        </tr>
+        <tr>
+            <td>마우스</td>
+            <td class="count">1</td>
+            <td class="price">20,000원</td>
+            <td class="total">20,000원</td>
+        </tr>
+        <tr>
+            <td>모니터</td>
+            <td class="count">1</td>
+            <td class="price">150,000원</td>
+            <td class="total">150,000원</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="3"><b>총 결제 금액</b></td>
+            <td class="total">230,000원</td>
+        </tr>
+    </tfoot>
+    </table>
+</body>
+</html>
