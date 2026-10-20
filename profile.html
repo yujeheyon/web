@@ -4,14 +4,28 @@
     <meta charset="UTF-8">
     <title>내 프로필</title>
     <style>
-        table, th, td
+        .side_table
+        {
+            width:100%;
+        }
+        .profile_table
         {
             border: 1px solid #ccc;
             border-collapse: collapse;
         }
 
-        th, td
+        .profile_table tr th
         {
+            border: 1px solid #ccc;
+            border-collapse: collapse;
+            width: 200px;
+            padding: 10px;
+        }
+
+        .profile_table tr td  
+        {
+            border: 1px solid #ccc;
+            border-collapse: collapse;
             width: 200px;
             padding: 10px;
         }
@@ -21,78 +35,134 @@
             background-color: #eeeeee;
             width: 100%;
         }
+
+        .side_td
+        {
+            width: 30%;
+            background-color: #ccc;
+        }
+
+        .main_td
+        {
+            padding-left: 50px;
+        }
+
+        img
+        {
+            width: 350px;
+            height: 420px;
+        }
+
+        .img_td
+        {
+            width: 400px;
+            height: 500px; 
+            text-align: center;
+        }
+
+        .side_in_table tr td
+        {
+            margin:auto;
+            padding:15px 15px 0px 15px;
+
+        }
     </style>
 </head>
 <body>
-    <h2>Who am I?</h2>
-    <p>
-        저는 이유빈입니다.<br>
-        <mark>백엔드 개발자</mark>를 목표로 공부를 하고 있습니다.
-    </p>
-    <hr>
+    <table class="side_table">
+        <tr>
+            <td class="side_td">
+                <table class="side_in_table">
+                    <tr>
+                        <td class="img_td"><img src="img/leonhard.jpg"></td>
+                    </tr>
+                    <tr>
+                        <td><h2>Yubin Lee</h2></td>
+                    </tr>
+                    <tr>
+                        <td>DaeJeon, Korea</td>
+                    </tr>
+                    <tr>
+                        <td>jehyeon098@naver.com</td>
+                    </tr>
+                    <tr>
+                        <td><h2>SNS</h2></td>
+                    </tr>
+                </table>
+            </td>
+            <td class="main_td" rowspan="4">
+                <h2>Who am I?</h2>
+                <p>
+                    저는 이유빈입니다.<br>
+                    <mark>백엔드 개발자</mark>를 목표로 공부를 하고 있습니다.
+                </p>
+                <hr>
 
-    <h2>Experience</h2>
-    <ul>
-        <li>
-            자바 기반 팀 프로젝트
-            <ul>
-                <li>전주를 비빈다</li>
-                <li>LG+C</li>
-            </ul>
-        </li>
-    </ul>
-    <hr>
+                <h2>Experience</h2>
+                <ul>
+                    <li>
+                        자바 기반 팀 프로젝트
+                        <ul>
+                            <li>전주를 비빈다</li>
+                            <li>LG+C</li>
+                        </ul>
+                    </li>
+                </ul>
+                <hr>
 
-    <h2>Skills</h2>
-    <table>
-        <caption><h3>자격증</h3></caption>
-        <colgroup>
-            <col style="background-color: pink;">
-            <col>
-            <col>
-        </colgroup>
-        <tr class="list">
-            <th>자격증명</th>
-            <th>취득날짜</th>
-            <th>발행기관</th>
-        </tr>
-        <tr>
-            <td>미용사(네일)</td>
-            <td>2019.03</td>
-            <td>한국산업인력공단</td>
-        </tr>
-        <tr>
-            <td>2종보통운전면허</td>
-            <td>2020.07</td>
-            <td>경찰청(운전면허시험관리단)</td>
-        </tr>
-        <tr>
-            <td>MCF 인공지능</td>
-            <td>2024.11</td>
-            <td>마이크로소프트</td>
-        </tr>
-        <tr>
-            <td>MCF 인공지능</td>
-            <td>2024.11</td>
-            <td>마이크로소프트</td>
-        </tr>
-    </table>
-    <hr>
-    
-    <h2>Education</h2>
-    <table>
-        <caption><h3>학력 사항</h3></caption>
-        <tr class="list">
-            <th>출신학교</th>
-            <th>전공</th>
-            <th>기간</th>
-            <th>구분</th>
-        </tr>
-        <tr>
-            <td>전주중앙여자고등학교</td>
-            <td>인문계</td>
-            <td>2016.3 - 2019.3</td>
-            <td>졸업</td>
+                <h2>Skills</h2>
+                <table class="profile_table">
+                    <caption><h3>자격증</h3></caption>
+                    <colgroup>
+                        <col style="background-color: pink;">
+                        <col>
+                        <col>
+                    </colgroup>
+                    <tr class="list">
+                        <th>자격증명</th>
+                        <th>취득날짜</th>
+                        <th>발행기관</th>
+                    </tr>
+                    <tr>
+                        <td>미용사(네일)</td>
+                        <td>2019.03</td>
+                        <td>한국산업인력공단</td>
+                    </tr>
+                    <tr>
+                        <td>2종보통운전면허</td>
+                        <td>2020.07</td>
+                        <td>경찰청(운전면허시험관리단)</td>
+                    </tr>
+                    <tr>
+                        <td>MCF 인공지능</td>
+                        <td>2024.11</td>
+                        <td>마이크로소프트</td>
+                    </tr>
+                    <tr>
+                        <td>MCF 인공지능</td>
+                        <td>2024.11</td>
+                        <td>마이크로소프트</td>
+                    </tr>
+                </table>
+                <hr>
+                
+                <h2>Education</h2>
+                <table class="profile_table">
+                    <caption><h3>학력 사항</h3></caption>
+                    <tr class="list">
+                        <th>출신학교</th>
+                        <th>전공</th>
+                        <th>기간</th>
+                        <th>구분</th>
+                    </tr>
+                    <tr>
+                        <td>전주중앙여자고등학교</td>
+                        <td>인문계</td>
+                        <td>2016.3 - 2019.3</td>
+                        <td>졸업</td>
+                    </tr>
+                </table>
+            </td>
         </tr>
     </table>
 </body>
