@@ -15,7 +15,7 @@
             padding: 10px;
         }
 
-        thead, tfoot
+        thead
         {
             background-color: #eeeeee;
         }
@@ -24,6 +24,11 @@
 <body>
     <table>
         <caption>제주특별자치도 학교현황(2015.4.1  기준)</caption>
+        <colgroup>
+            <col>
+            <col span="3" style="background-color: yellow;">
+            <col style="background-color: blue;">
+        </colgroup>
         <thead>
             <tr>
                 <th>구분</th>
@@ -72,7 +77,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>합계</th>
+                <th style="background-color: #eeeeee;">합계</th>
                 <td>300</td>
                 <td>3,437</td>
                 <td>86,954</td>
