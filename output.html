@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>웹 폼</title>
+    <style>
+        fieldset
+        {
+            width: 400px;
+            background-color: aliceblue;
+        }
+
+        fieldset legend
+        {
+            font-weight: bold;
+            color: lightcoral;
+        }
+
+        input
+        {
+            width: 120px;
+            text-align: right;
+        }
+
+        span
+        {
+            display: inline-block;
+            text-align: center;
+            width: 20px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2>사칙연산 계산기</h2>
+    <fieldset>
+    <fieldset>
+        <legend>더하기</legend>
+        <form oninput="plus_result.value = parseInt(num1.value) + parseInt(num2.value)">
+            <input type="number" name="num1" value="0">
+            <span>+</span>
+            <input type="number" name="num2" value="0">
+            <span>=</span>
+            <output name="plus_result" for="num"></output>
+        </form>
+    </fieldset>
+    <fieldset>
+        <legend>빼기</legend>
+        <form oninput="minus_result.value = parseInt(num1.value) - parseInt(num2.value)">
+            <input type="number" name="num1" value="0">
+            <span>-</span> 
+            <input type="number" name="num2" value="0">
+            <span>=</span>
+            <output name="minus_result" for="num"></output>
+        </form>
+    </fieldset>
+    <fieldset>
+        <legend>곱하기</legend>
+        <form oninput="multi_result.value = parseInt(num1.value) * parseInt(num2.value)">
+            <input type="number" name="num1" value="0">
+            <span>x</span>
+            <input type="number" name="num2" value="0">
+            <span>=</span>
+            <output name="multi_result" for="num"></output>
+        </form>
+    </fieldset>
+    <fieldset>
+        <legend>나누기</legend>
+        <form oninput="divide_result.value = parseInt(num1.value) / parseInt(num2.value)">
+            <input type="number" name="num1" value="0">
+            <span>÷</span>
+            <input type="number" name="num2" value="0">
+            <span>=</span>
+            <output name="divide_result" for="num"></output>
+        </form>
+    </fieldset>
+    </fieldset>
+    <table>
+        <tr>
+            <td>c</td>
+            <td>/</td>
+            <td>*</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td rowspan="2">+</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td rowspan="2">=</td>
+        </tr>
+        <tr>
+            <td colspan="2">0</td>
+            <td>.</td>
+        </tr>
+    </table>
+</body>
+</html>
