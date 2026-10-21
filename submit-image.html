@@ -3,13 +3,31 @@
 <head>
     <meta charset="utf-8">
     <title>이미지 버튼</title>
+    <style>
+        table
+        {
+            border: 1px solid #ccc;
+        }
+        
+        td
+        {
+            padding: 5px 10px;
+            border: 0px;
+            vertical-align: middle;
+        }
+
+        #butt
+        {
+            width: 120px;
+        }
+    </style>
 </head>
 <body>
     <form method="get" action="Image" enctype="utf-8">
         <table>
             <tr>
-                <td><label>아이디<input type="text" size="15" name="user_id"></label></td>
-                <td><label>비밀번호<input type="password" size="15" name="user_pw"></label></td>
+                <td><label>아이디 <input type="text" size="15" name="user_id"></label></td>
+                <td><label>비밀번호 <input type="password" size="15" name="user_pw"></label></td>
                 <td><input type="image" id="butt" src="img/login.png" alt="login" onclick="submit()"></td>
             </tr>
         </table>
