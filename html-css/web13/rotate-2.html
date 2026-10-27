@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Transform</title>
+    <style>
+        .origin
+        {
+            width: auto;
+            height: auto;
+            border: 1px solid black;
+            float: left;
+            margin: 40px;
+            perspective: 200px;
+        }
+
+        .rotatex
+        {
+            transform: rotateX(45deg);
+        }
+
+        .rotatey
+        {
+            transform: rotateY(45deg);
+        }
+
+        .rotatez
+        {
+            transform: rotateZ(45deg);
+        }
+
+        .rotatexyz
+        {
+            transform: rotate3d(2.5, 1.2, -1.5, 45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="origin">
+        <div class="rotatex">
+            <img src="../img/book-glasses.jpg">
+        </div>
+    </div>
+    <div class="origin">
+        <div class="rotatey">
+            <img src="../img/book-glasses.jpg">
+        </div>
+    </div>
+    <div class="origin">
+        <div class="rotatez">
+            <img src="../img/book-glasses.jpg">
+        </div>
+    </div>
+    <div class="origin">
+        <div class="rotatexyz">
+            <img src="../img/book-glasses.jpg">
+        </div>
+    </div>
+</body>
+</html>

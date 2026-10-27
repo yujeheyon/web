@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Transform</title>
+    <style>
+        .origin
+        {
+            width: auto;
+            height: auto;
+            border: 1px solid black;
+            float: left;
+            margin: 40px;
+        }
+
+        .city
+        {
+            transform: rotateZ(10deg);
+        }
+
+        .ltop .city
+        {
+            transform-origin: left top;
+        }
+
+        .rtop .city
+        {
+            transform-origin: right top;
+        }
+
+        .lbottom .city
+        {
+            transform-origin: left bottom;
+        }
+
+        .rbottom .city
+        {
+            transform-origin: right bottom;
+        }
+    </style>
+</head>
+<body>
+    <div class="origin">
+        <div class="ltop">
+            <img src="../img/city.jpg" class="city">
+        </div>
+    </div>
+    <div class="origin">
+        <div class="rtop">
+            <img src="../img/city.jpg" class="city">
+        </div>
+    </div>
+    <div class="origin">
+        <div class="lbottom">
+            <img src="../img/city.jpg" class="city">
+        </div>
+    </div>
+    <div class="origin">
+        <div class="rbottom">
+            <img src="../img/city.jpg" class="city">
+        </div>
+    </div>
+</body>
+</html>
