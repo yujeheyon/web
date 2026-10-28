@@ -1,0 +1,294 @@
+@charset "utf-8";
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: white;
+}
+
+#container
+{
+    width: 1500px;
+    padding: 20px;
+}
+
+#header_div
+{
+    width: 100%;
+    height: 300px;
+    background-image: url(img/book-glasses.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: middle;
+}
+
+header
+{
+    width: 100%;
+    height: 80px;
+    background-color: #ff85ad;
+    color: white;
+}
+
+header h1
+{
+    float: left;
+    width: 300px;
+    line-height: 80px;
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+header nav
+{
+    float: left;
+    line-height: 80px;
+    font-size: 20px;
+}
+
+header nav ul
+{
+    list-style-type: none;
+}
+
+header nav ul li
+{
+    display: inline;
+    margin: 20px;
+}
+
+header nav ul li:hover
+{
+    color:#ff2d73;
+    cursor: pointer;
+}
+
+#content_div
+{
+    clear: both;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #ffe8f0;
+    padding: 20px 30px;
+}
+
+.box
+{
+    height: 900px;
+    padding: 10px 20px;
+    margin: 10px;
+    float: left;
+    background-color: white;
+    border: 1px solid #ff2870;
+}
+
+article
+{
+    width: 100%;
+    padding: 10px;
+}
+
+#box1, #box2
+{
+    width: 400px;    
+}
+
+#box3
+{
+    width: 500px;
+}
+
+h2
+{
+    height: 50px;
+    line-height: 50px;
+}
+
+h3
+{
+    height: 50px;
+    font-size: 18px;
+}
+
+#box1 nav
+{
+    height: 150px;
+    padding: 10px 10px 10px 30px;
+    line-height: 30px;
+}
+
+#box1 nav ul
+{
+    list-style-image: url(img/check.png);
+}
+
+#box1 p
+{
+    height: 100px;
+    padding: 10px;
+}
+
+#box1 pre
+{
+    height: 100px;
+    padding: 20px;
+    font-size: 14px;
+    background-color: #ffe6ef;
+}
+
+table, tr, th, td
+{
+    border: 1px solid #ff2870;
+    border-collapse: collapse;
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+th
+{
+    background-color: #ffe6ef;
+}
+
+#box2 p
+{
+    text-align: center;
+    padding: 20px;
+}
+
+.comment 
+{
+    padding-bottom: 10px;
+}
+
+fieldset
+{
+    border: 1px solid #ff9ebe;
+    padding: 20px;
+}
+
+legend
+{
+    font-size: 20px;
+    font-weight: 500;
+    padding: 5px;
+}
+
+.user label input
+{
+    height: 40px;
+    width: 100%;
+    padding-left: 10px;
+    border: 1px solid #ff9ebe;
+}
+
+.user
+{
+    margin: 10px 0px;
+}
+
+.user > p
+{
+    margin-bottom: 10px;
+}
+
+#user_tel, #user_mail
+{
+    display: inline-block;
+    width: 190px;
+}
+
+#user_mail
+{
+    margin-left: 10px;
+}
+
+.side_box
+{
+    display: inline-block;
+}
+
+#side_content
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#date label input, #people label input, .side_box label select, .side_box label select option
+{
+    height: 40px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+    border: 1px solid #ff9ebe;
+    cursor: pointer;
+}
+
+#date label input { width: 120px; }
+#people label input { width: 70px; }
+
+.side_box label select, .side_box label select option
+{ width: 150px; }
+
+#bf_service
+{
+    width: 100%;
+    padding: 10px 0px;
+    font-size: 16px;
+}
+
+#bf_service label
+{
+    padding-left:20px;
+}
+
+#service
+{
+    padding: 10px 0px ;
+}
+
+#other p
+{
+    padding: 10px 0px;
+}
+
+#other label textarea
+{
+    width: 100%;
+    height: 80px;
+    border: 1px solid #ff9ebe;
+    padding-left: 10px;
+    line-height: 30px;
+}
+
+.btn
+{
+    width: 48%;
+    height: 50px;
+    margin: 10px 0px;
+    font-size: 20px;
+    color: white;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+}
+
+#btn1
+{
+    background-color: #ff81ab;
+}
+
+#btn2
+{
+    margin-left: 13px;
+    background-color: #ff9ebe;
+}
