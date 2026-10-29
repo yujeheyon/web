@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>수학객체</title>
+    <script>
+        document.write("<h1>컴퓨터 가위 바위 보</h1>")
+        var game = prompt("가위, 바위, 보 중 선택하세요.", "가위");
+        var gameNum;
+
+        switch(game)
+        {
+            case "가위": gameNum = 1;
+            break;
+            case "바위": gameNum = 2;
+            break;
+            case "보": gameNum = 3;
+            break;
+        }
+
+        var com = Math.ceil(Math.random() * 3);
+        document.write("<span>상대방: </span>")
+        document.write("<img src=\"../../img/rsp" + com + ".png\">");
+        document.write("<span>나: </span>")
+        document.write("<img src=\"../../img/rsp" + gameNum + ".png\">");
+
+        if(gameNum == com)
+        {
+            document.write("<h3>비겼습니다!</h3>")
+            document.write("<img src=\"../../img/compare.png\">");
+        }else if(gameNum == 1 && com == 3)
+        {
+            document.write("<h3>이겼습니다!</h3>")
+            document.write("<img src=\"../../img/win.png\">");
+        }else if(gameNum == 2 && com == 1)
+        {
+            document.write("<h3>이겼습니다!</h3>")
+            document.write("<img src=\"../../img/win.png\">");
+        }else if(gameNum == 3 && com == 2)
+        {
+            document.write("<h3>이겼습니다!</h3>")
+            document.write("<img src=\"../../img/win.png\">");
+        }else
+        {
+            document.write("<h3>졌습니다!</h3>")
+            document.write("<img src=\"../../img/lose.png\">");
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>
